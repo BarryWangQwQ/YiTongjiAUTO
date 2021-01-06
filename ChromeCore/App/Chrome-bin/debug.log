@@ -1,0 +1,287 @@
+[1020/150946.717:ERROR:registration_protocol_win.cc(56)] CreateFile: 系统找不到指定的文件。 (0x2)
+[1020/152433.195:ERROR:registration_protocol_win.cc(56)] CreateFile: 系统找不到指定的文件。 (0x2)
+[1020/153157.342:ERROR:registration_protocol_win.cc(56)] CreateFile: 系统找不到指定的文件。 (0x2)
+[1020/154117.638:ERROR:registration_protocol_win.cc(56)] CreateFile: 系统找不到指定的文件。 (0x2)
+[1020/155021.480:ERROR:registration_protocol_win.cc(56)] CreateFile: 系统找不到指定的文件。 (0x2)
+[1020/155831.729:ERROR:registration_protocol_win.cc(56)] CreateFile: 系统找不到指定的文件。 (0x2)
+[1020/164630.068:ERROR:registration_protocol_win.cc(56)] CreateFile: 系统找不到指定的文件。 (0x2)
+[1020/170536.492:ERROR:registration_protocol_win.cc(56)] CreateFile: 系统找不到指定的文件。 (0x2)
+[1020/172221.002:ERROR:registration_protocol_win.cc(56)] CreateFile: 系统找不到指定的文件。 (0x2)
+[1020/172638.649:ERROR:registration_protocol_win.cc(56)] CreateFile: 系统找不到指定的文件。 (0x2)
+[1020/172827.960:ERROR:registration_protocol_win.cc(56)] CreateFile: 系统找不到指定的文件。 (0x2)
+[1020/173847.858:ERROR:registration_protocol_win.cc(56)] CreateFile: 系统找不到指定的文件。 (0x2)
+[1020/174113.263:ERROR:registration_protocol_win.cc(56)] CreateFile: 系统找不到指定的文件。 (0x2)
+[1020/174538.277:ERROR:registration_protocol_win.cc(56)] CreateFile: 系统找不到指定的文件。 (0x2)
+[1025/151559.534:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1025/151604.545:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1025/185549.606:ERROR:process_reader_win.cc(123)] NtOpenThread: {无法访问} 过程已请求访问一对象，但未给访问权限。 (0xc0000022)
+[1025/185549.607:ERROR:exception_snapshot_win.cc(98)] thread ID 1492 not found in process
+[1027/192403.469:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1027/192408.490:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1028/101720.411:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1028/101725.426:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1029/144616.315:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1029/144621.330:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1029/165956.123:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1029/170001.142:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1029/170158.311:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1029/170203.330:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1031/200948.002:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1031/200953.022:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1101/194555.030:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1106/104759.034:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1106/104804.044:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1106/190102.062:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1106/190107.073:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1106/213700.563:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1106/213705.570:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1109/115755.585:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1109/115800.603:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1109/120207.382:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1109/120212.401:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1111/101749.872:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1111/101754.894:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1201/120649.193:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1201/120654.216:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1201/121041.311:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1201/121046.322:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1215/103248.795:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1215/103253.806:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1215/103306.106:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1215/103311.121:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1216/134307.237:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1218/124530.038:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1218/124535.060:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1218/152800.997:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1218/214731.172:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1218/214736.188:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1218/214803.770:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1218/214808.785:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1218/214836.522:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1218/231102.372:ERROR:ssl_client_socket_impl.cc(935)] handshake failed; returned -1, SSL error code 1, net_error -101
+[1219/001634.505:ERROR:ssl_client_socket_impl.cc(935)] handshake failed; returned -1, SSL error code 1, net_error -101
+[1219/122856.610:ERROR:ssl_client_socket_impl.cc(935)] handshake failed; returned -1, SSL error code 1, net_error -100
+[1219/123628.717:ERROR:ssl_client_socket_impl.cc(935)] handshake failed; returned -1, SSL error code 1, net_error -100
+[1219/130251.971:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 1
+[1219/150101.220:ERROR:ssl_client_socket_impl.cc(935)] handshake failed; returned -1, SSL error code 1, net_error -101
+[1219/154830.934:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1219/161945.695:ERROR:ssl_client_socket_impl.cc(935)] handshake failed; returned -1, SSL error code 1, net_error -101
+[1219/203640.814:ERROR:ssl_client_socket_impl.cc(935)] handshake failed; returned -1, SSL error code 1, net_error -100
+[1220/120245.862:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 19
+[1220/120250.306:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 27
+[1220/120255.192:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 29
+[1220/120259.541:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 39
+[1220/120309.531:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 47
+[1220/120313.856:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 61
+[1220/120329.503:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 77
+[1220/120414.698:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 81
+[1220/121238.094:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 1
+[1220/121242.385:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 7
+[1220/121242.410:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 3
+[1220/121243.276:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 19
+[1220/121243.276:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 17
+[1220/121246.026:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 5
+[1220/121246.198:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 7
+[1220/121247.030:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 25
+[1220/121247.030:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 27
+[1220/121247.233:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 13
+[1220/121247.342:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 9
+[1220/121252.208:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 17
+[1220/121256.262:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 11
+[1220/121256.436:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 13
+[1220/121257.441:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 15
+[1220/121257.843:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 17
+[1220/121300.190:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 19
+[1220/121302.837:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 21
+[1220/121307.681:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 45
+[1220/121307.681:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 47
+[1220/121316.290:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 63
+[1220/121316.340:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 65
+[1220/121316.395:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 39
+[1220/121316.633:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 21
+[1220/121320.792:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 73
+[1220/121321.726:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 45
+[1220/121329.433:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 91
+[1220/121347.130:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 111
+[1220/121347.301:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 109
+[1220/121347.516:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 3
+[1220/121351.503:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 121
+[1220/121358.637:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 5
+[1220/121358.850:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 7
+[1220/121400.519:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 9
+[1220/121402.689:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 11
+[1220/121402.689:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 13
+[1220/121403.454:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 15
+[1220/121405.790:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 17
+[1220/121407.292:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 19
+[1220/121407.461:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 21
+[1220/121408.780:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 95
+[1220/121409.463:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 23
+[1220/121411.912:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 25
+[1220/121413.657:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 27
+[1220/121413.802:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 155
+[1220/121413.802:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 157
+[1220/121414.013:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 29
+[1220/121414.595:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 31
+[1220/121415.929:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 33
+[1220/121417.180:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 35
+[1220/121421.237:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 37
+[1220/121422.481:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 39
+[1220/121422.734:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 173
+[1220/121423.175:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 41
+[1220/121425.209:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 43
+[1220/121425.238:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 45
+[1220/121425.760:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 47
+[1220/121426.114:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 49
+[1220/121426.270:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 51
+[1220/121430.144:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 53
+[1220/121431.859:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 55
+[1220/121431.979:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 57
+[1220/121458.246:ERROR:ssl_client_socket_impl.cc(935)] handshake failed; returned -1, SSL error code 1, net_error -101
+[1220/121502.206:ERROR:ssl_client_socket_impl.cc(935)] handshake failed; returned -1, SSL error code 1, net_error -101
+[1220/121503.774:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 3
+[1220/121629.214:ERROR:ssl_client_socket_impl.cc(935)] handshake failed; returned -1, SSL error code 1, net_error -101
+[1220/121631.246:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 1
+[1220/121631.412:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 3
+[1220/121854.430:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 53
+[1220/121854.618:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 21
+[1220/121900.925:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 29
+[1220/121904.966:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 37
+[1220/121910.158:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 45
+[1220/121914.131:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 45
+[1220/121914.138:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 51
+[1220/121914.138:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 53
+[1220/121918.551:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 47
+[1220/121923.307:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 53
+[1220/121923.384:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 63
+[1220/121927.980:WARNING:sync_reader.cc(170)] ASR: No room in socket buffer.: 管道正在被关闭。 (0xE8)
+[1220/121929.576:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 57
+[1220/121935.144:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 63
+[1220/121935.456:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 79
+[1220/121939.469:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 71
+[1220/121943.778:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 77
+[1220/121943.858:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 95
+[1220/121951.758:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 101
+[1220/121951.758:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 103
+[1220/122020.995:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 91
+[1220/122028.928:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 99
+[1220/122033.464:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 107
+[1220/122037.680:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 111
+[1220/122042.418:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 117
+[1220/122046.722:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 119
+[1220/122051.928:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 157
+[1220/122057.920:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 123
+[1220/122103.800:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 171
+[1220/122124.130:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 141
+[1220/122124.221:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 143
+[1220/122130.263:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 145
+[1220/122138.944:WARNING:sync_reader.cc(170)] ASR: No room in socket buffer.: 管道正在被关闭。 (0xE8)
+[1220/122212.328:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 235
+[1220/122212.503:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 237
+[1220/122222.980:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 15
+[1220/122227.916:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 253
+[1220/122234.441:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 23
+[1220/122237.505:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 261
+[1220/122241.380:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 31
+[1220/122246.393:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 275
+[1220/122246.493:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 37
+[1220/122246.521:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 277
+[1220/122252.843:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 45
+[1220/122349.868:ERROR:ssl_client_socket_impl.cc(935)] handshake failed; returned -1, SSL error code 1, net_error -101
+[1220/124700.120:ERROR:ssl_client_socket_impl.cc(935)] handshake failed; returned -1, SSL error code 1, net_error -101
+[1220/132503.259:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1220/132503.292:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1220/132508.281:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1220/132508.309:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1220/132513.300:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1220/132513.324:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1220/132518.325:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1220/132518.334:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1220/132602.165:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1220/132602.255:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1220/132607.181:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1220/132607.277:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1220/132612.200:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1220/132612.296:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1220/132617.219:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1220/132617.315:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1220/133033.635:ERROR:ssl_client_socket_impl.cc(935)] handshake failed; returned -1, SSL error code 1, net_error -101
+[1220/133640.781:ERROR:ssl_client_socket_impl.cc(935)] handshake failed; returned -1, SSL error code 1, net_error -100
+[1220/133707.175:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1220/133707.209:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1220/134400.614:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1220/134402.446:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1220/134405.626:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1220/203243.088:ERROR:ssl_client_socket_impl.cc(935)] handshake failed; returned -1, SSL error code 1, net_error -101
+[1220/205331.480:ERROR:ssl_client_socket_impl.cc(935)] handshake failed; returned -1, SSL error code 1, net_error -101
+[1220/205335.377:ERROR:ssl_client_socket_impl.cc(935)] handshake failed; returned -1, SSL error code 1, net_error -101
+[1220/205836.632:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 3
+[1220/205916.930:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 5
+[1220/205916.946:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 7
+[1220/205919.135:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 5
+[1220/205921.258:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 13
+[1220/205921.267:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 5
+[1220/205921.268:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 11
+[1220/205921.278:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 7
+[1220/205921.375:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 129
+[1220/205923.655:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 9
+[1220/205925.573:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 23
+[1220/205926.677:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 9
+[1220/205926.843:WARNING:spdy_session.cc(3316)] Received HEADERS for invalid stream 11
+[1220/220206.088:ERROR:ssl_client_socket_impl.cc(935)] handshake failed; returned -1, SSL error code 1, net_error -101
+[1220/230431.360:ERROR:ssl_client_socket_impl.cc(935)] handshake failed; returned -1, SSL error code 1, net_error -100
+[1220/230515.047:ERROR:ssl_client_socket_impl.cc(935)] handshake failed; returned -1, SSL error code 1, net_error -101
+[1220/230531.037:ERROR:ssl_client_socket_impl.cc(935)] handshake failed; returned -1, SSL error code 1, net_error -100
+[1220/231102.121:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1220/231107.139:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1220/231112.160:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1220/231117.175:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1222/211117.185:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1222/211120.806:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1222/211122.195:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1223/165249.213:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1224/171915.043:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1224/171920.054:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1224/172355.441:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1224/172400.457:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1224/172615.501:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1224/172620.524:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1224/172633.087:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1224/172638.103:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[1225/151305.265:WARNING:dns_config_service_win.cc(672)] Failed to read DnsConfig.
+[0104/221644.383:ERROR:process_info.cc(329)] VirtualQueryEx: 拒绝访问。 (0x5)
+[0104/221644.384:ERROR:process_info.cc(556)] ReadMemoryInfo failed
+[0104/221644.385:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: 已尝试访问正在退出的过程。 (0xc000010a)
+[0104/221656.154:WARNING:backend_impl.cc(1835)] Destroying invalid entry.
+[0104/221656.154:WARNING:backend_impl.cc(1835)] Destroying invalid entry.
+[0104/222210.323:WARNING:backend_impl.cc(1835)] Destroying invalid entry.
+[0104/222210.324:WARNING:backend_impl.cc(1835)] Destroying invalid entry.
+[0104/233436.631:WARNING:backend_impl.cc(1835)] Destroying invalid entry.
+[0104/234151.105:ERROR:sandbox_policy_base.cc(359)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:/Users/starb/AppData/Local/Google/Chrome/User Data/Default\Default\chrome_debug.log'
+[0104/234151.495:ERROR:sandbox_policy_base.cc(359)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:/Users/starb/AppData/Local/Google/Chrome/User Data/Default\Default\chrome_debug.log'
+[0104/234151.500:ERROR:sandbox_policy_base.cc(359)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:/Users/starb/AppData/Local/Google/Chrome/User Data/Default\Default\chrome_debug.log'
+[0104/234151.500:ERROR:sandbox_policy_base.cc(359)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:/Users/starb/AppData/Local/Google/Chrome/User Data/Default\Default\chrome_debug.log'
+[0104/234824.429:ERROR:sandbox_policy_base.cc(359)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:/Users/starb/AppData/Local/Google/Chrome/User Data/Default\Default\chrome_debug.log'
+[0104/234824.776:ERROR:sandbox_policy_base.cc(359)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:/Users/starb/AppData/Local/Google/Chrome/User Data/Default\Default\chrome_debug.log'
+[0104/234824.778:ERROR:sandbox_policy_base.cc(359)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:/Users/starb/AppData/Local/Google/Chrome/User Data/Default\Default\chrome_debug.log'
+[0104/234824.781:ERROR:sandbox_policy_base.cc(359)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:/Users/starb/AppData/Local/Google/Chrome/User Data/Default\Default\chrome_debug.log'
+[0104/234849.131:ERROR:sandbox_policy_base.cc(359)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:/Users/starb/AppData/Local/Google/Chrome/User Data/Default\Default\chrome_debug.log'
+[0104/234849.465:ERROR:sandbox_policy_base.cc(359)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:/Users/starb/AppData/Local/Google/Chrome/User Data/Default\Default\chrome_debug.log'
+[0104/234849.469:ERROR:sandbox_policy_base.cc(359)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:/Users/starb/AppData/Local/Google/Chrome/User Data/Default\Default\chrome_debug.log'
+[0104/234849.470:ERROR:sandbox_policy_base.cc(359)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:/Users/starb/AppData/Local/Google/Chrome/User Data/Default\Default\chrome_debug.log'
+[0104/234921.493:ERROR:sandbox_policy_base.cc(359)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:/Users/starb/AppData/Local/Google/Chrome/User Data/Default\Default\chrome_debug.log'
+[0104/234921.861:ERROR:sandbox_policy_base.cc(359)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:/Users/starb/AppData/Local/Google/Chrome/User Data/Default\Default\chrome_debug.log'
+[0104/234921.865:ERROR:sandbox_policy_base.cc(359)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:/Users/starb/AppData/Local/Google/Chrome/User Data/Default\Default\chrome_debug.log'
+[0104/234921.866:ERROR:sandbox_policy_base.cc(359)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:/Users/starb/AppData/Local/Google/Chrome/User Data/Default\Default\chrome_debug.log'
+[0104/235111.551:ERROR:sandbox_policy_base.cc(359)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:/Users/starb/AppData/Local/Google/Chrome/User Data/Default\Default\chrome_debug.log'
+[0104/235111.909:ERROR:sandbox_policy_base.cc(359)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:/Users/starb/AppData/Local/Google/Chrome/User Data/Default\Default\chrome_debug.log'
+[0104/235111.911:ERROR:sandbox_policy_base.cc(359)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:/Users/starb/AppData/Local/Google/Chrome/User Data/Default\Default\chrome_debug.log'
+[0104/235111.914:ERROR:sandbox_policy_base.cc(359)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:/Users/starb/AppData/Local/Google/Chrome/User Data/Default\Default\chrome_debug.log'
+[0104/235237.289:ERROR:sandbox_policy_base.cc(359)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:/Users/starb/AppData/Local/Google/Chrome/User Data/Default\Default\chrome_debug.log'
+[0104/235237.637:ERROR:sandbox_policy_base.cc(359)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:/Users/starb/AppData/Local/Google/Chrome/User Data/Default\Default\chrome_debug.log'
+[0104/235237.639:ERROR:sandbox_policy_base.cc(359)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:/Users/starb/AppData/Local/Google/Chrome/User Data/Default\Default\chrome_debug.log'
+[0104/235237.641:ERROR:sandbox_policy_base.cc(359)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:/Users/starb/AppData/Local/Google/Chrome/User Data/Default\Default\chrome_debug.log'
+[0104/235409.537:ERROR:sandbox_policy_base.cc(359)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:/Users/starb/AppData/Local/Google/Chrome/User Data/Default\Default\chrome_debug.log'
+[0104/235409.876:ERROR:sandbox_policy_base.cc(359)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:/Users/starb/AppData/Local/Google/Chrome/User Data/Default\Default\chrome_debug.log'
+[0104/235409.880:ERROR:sandbox_policy_base.cc(359)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:/Users/starb/AppData/Local/Google/Chrome/User Data/Default\Default\chrome_debug.log'
+[0104/235409.882:ERROR:sandbox_policy_base.cc(359)] Failed to add sandbox rule. error = 2, subsystem = 0, semantics = 0, pattern = 'C:/Users/starb/AppData/Local/Google/Chrome/User Data/Default\Default\chrome_debug.log'
