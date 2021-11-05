@@ -1,126 +1,252 @@
-from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.support.select import Select
-from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.support.wait import WebDriverWait
-from selenium.webdriver.support.select import Select
-from selenium import webdriver
-import time
-import os
-import os.path
+# -*- coding: utf-8 -*-
+# @Time    : 2021/11/5 11:06
+# @Author  : Barry Wang
+# @FileName: YiTongJiAUTO.py
+# @Software: YiTongJiAUTO
+# @Github  : https://github.com/BarryWangQwQ
+
+import sys
 import json
-import shutil
-
-def Console():
-   print("SYSETM: Running With Console ...\n")
-   global driver
-   chrome_options = Options()
-   chrome_options.add_argument('--headless')
-   chrome_options.add_argument('--disable-gpu')
-   chrome_options.add_argument('--ignore-certificate-errors') 
-   chrome_options.add_argument('--ignore-ssl-errors') 
-   chrome_options.add_argument('log-level=3')
-   chrome_options.add_argument('blink-settings=imagesEnabled=false')                                                     
-   chrome_options.add_experimental_option("excludeSwitches", ['enable-automation'])
-   username = os.environ[ 'USERNAME' ]
-   userpath = 'C:\\Users\\' + username + '\\AppData\\Local\\Google\\Chrome\\User Data\\Default'
-   chrome_options.add_argument('--user-data-dir=' + userpath) 
-   chrome_options.binary_location = r"C:\Users\SchoolWebLogin\ChromeCore\App\Chrome-bin\chrome.exe"                                             
-   driver = webdriver.Chrome(executable_path=r".\ChromeCore\Driver\win32\chromedriver.exe",chrome_options=chrome_options) 
- 
-def GUI():
-    print("SYSETM: Running With GUI ...\n")
-    global driver
-    chrome_options = Options()
-    chrome_options.add_argument('--ignore-certificate-errors') 
-    chrome_options.add_argument('--ignore-ssl-errors')
-    chrome_options.add_argument('log-level=3')
-    #chrome_options.add_argument('blink-settings=imagesEnabled=false')                                                         
-    chrome_options.add_experimental_option("excludeSwitches", ['enable-automation'])
-    username = os.environ[ 'USERNAME' ]
-    userpath = 'C:\\Users\\' + username + '\\AppData\\Local\\Google\\Chrome\\User Data\\Default'
-    chrome_options.add_argument('--user-data-dir=' + userpath) 
-    chrome_options.binary_location = r".\ChromeCore\App\Chrome-bin\chrome.exe"                                          
-    driver = webdriver.Chrome(executable_path=r"C:\Users\SchoolWebLogin\ChromeCore\Driver\win32\chromedriver.exe",chrome_options=chrome_options)
+import requests
+import datetime
+import threading
 
 
-def login_history():
-    global driver
-    print ("\n尝试用记录过的历史身份登录...")
-    driver.get("https://www.ioteams.com/ncov/ccbuptxs#/report")                                 
-    driver.implicitly_wait(3)                                                           
-    try:
-        driver.find_element_by_xpath('//*[@id="app"]/div/div/div/button[1]').click()
-        driver.implicitly_wait(3)                                                           
-        print ("\n上报成功！:-)\n")
-        driver.quit()
-    except:
-        print ("\n登录失败，可能是之前的身份记录已经失效或发生信息更新等其他错误！")
-        print ("\n历史身份记录已被重置,请重新验证。")
-        login_first()
+# 健康日报对象
+class Health_Reporter:
+    def __init__(self,
+                 token=None,
+                 province=None,
+                 city=None,
+                 country=None,
+                 lng=None,
+                 lat=None,
+                 fever=False,
+                 infected=False):
+        self.token = token
+        self.province = province
+        self.city = city
+        self.country = country
+        self.lng = lng
+        self.lat = lat
+        self.fever = fever
+        self.infected = infected
+        # 接口header
+        self.headers = {
+            "Content-Type": "application/json;charset=utf-8",
+            "ncov-access-token": self.token,  # 用户唯一且不变的token 例如: "68e932c30032****9c01f6f5"
+        }
+        # 打卡信息
+        self.data = {
+            "address": {
+                "province": self.province,  # 省份代码   例如: （北京省）-> "110000"
+                "city": self.city,  # 市区代码   例如: （北京市）-> "110100"
+                "county": self.country,  # 县级代码   例如: （延庆区）-> "110119"
+                "autoFetch": True,
+                "lng": self.lng,  # 当前地区的经度  例如: 延庆 -> "115.88800815442164"
+                "lat": self.lat  # 当前地区的纬度  例如: 延庆 -> "40.37037323579328"
+            },
+            "self_suspected": False,  # 自己是否疑似患新型肺炎（隔离中等待医院检验结果）
+            "self_confirmed": False,  # 自己是否确诊患新型肺炎（医院已出具确诊证明）
+            "fever": self.fever,  # 是否有发热 True/False
+            "description": "",
+            "infected": self.infected,  # 是否被感染 True/False
+            "at_home": True,  # 是否今日在家
+            "contacted": False,  # 是否接触过疑似或确诊病例
+            "custom": {
+                "iywet": "否",  # 14日内是否有过中、高风险地区旅行史
+                "ikaeu": "否",  # 所在社区是否有确诊病例
+                "npafq": "否",  # 是否处于观察期（14天）
+                "zplnj": "大二",  # 所在年级
+                "vezjy": "36.5",  # 今天的体温是多少摄氏度
+                "toxwn": "否",  # 是否有呕吐、腹泻等症状（诺如病毒感染典型症状）
+                "ozjvm": "否",  # 身体是否出现皮疹、水疱（水痘症状）
+                "dxqon": "否",  # 是否处于居家健康观察状态
+                "gzvwa": "否",  # 是否处于新冠肺炎密切接触者居家隔离状态
+                "wvbnm": "否",  # 当日核酸检测是否为阳性
+                "stqig": "否",  # 目前是否身处中高风险地区
+                "goeza": "是",  # 是否已接种第一剂疫苗
+                "shnjm": "是"  # 是否已接种第二剂疫苗
+            },
+        }
 
-def login_first():
-    global driver
-    #driver.get('chrome://settings/clearBrowserData')
-    #driver.implicitly_wait(3)                                                      
-    #driver.find_element_by_xpath('//settings-ui').send_keys(Keys.ENTER)
-    driver.implicitly_wait(3)                                                     
-    driver.get("https://www.ioteams.com/ncov/ccbuptxs#/login")                 
-    driver.implicitly_wait(3)                                                        
-    print('\n第一次启用需要验证你的身份。')
-    try:
-        PhoneNumber = input('\n请输入手机号码：')
-        driver.implicitly_wait(3)                                                           
-        driver.find_element_by_xpath('//*[@id="app"]/div/div[2]/div/div[1]/div/div[2]/div[1]/div/div/input').send_keys(PhoneNumber)
-        driver.implicitly_wait(3)                                                           
-        driver.find_element_by_xpath('//*[@id="app"]/div/div[2]/div/div[1]/div/div[2]/div[2]/div/div/div/button').click()
-        driver.implicitly_wait(3)                                                           
-        VerifyCode = input('\n请输入手机获取到的验证码：')
-        driver.implicitly_wait(3)                                                           
-        driver.find_element_by_xpath('//*[@id="app"]/div/div[2]/div/div[1]/div/div[2]/div[2]/div/div/input').send_keys(VerifyCode)
-        driver.implicitly_wait(3)                                                           
-        driver.find_element_by_xpath('//*[@id="app"]/div/div[2]/div/div[1]/div/div[2]/button').click()
-        driver.implicitly_wait(3)                                                           
-        print ("\n登录成功，记录已保存。")
-        login_history()
-        driver.quit()
-    except:
-        print ("\n发生错误，请关闭重试。\n")
-        driver.quit()    
+    # 打卡
+    def report(self):
+        # 获取当前日报id
+        def get_DailyCode(headers, data):
+            link = 'https://www.ioteams.com/ncov/api/users/dailyReport'
+            req = requests.post(link, headers=headers, data=json.dumps(data))
+            response = req.json()
+            if response["msg"] == "您今天已经创建过日报，无法再次创建":
+                return None
+            else:
+                # print(response)
+                id = response['data']['data']['_id']
+                # print(id)
+                return id
 
-def autorun():
-    username = os.environ[ 'USERNAME' ]
-    source_path = os.getcwd() + '\ChromeCore'
-    target_path = 'C:\\Users\\' + username + '\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\ChromeCore'
-    if not os.path.exists(target_path):
-        os.makedirs(target_path)
-    if os.path.exists(source_path):
-        shutil.rmtree(target_path)
-    shutil.copytree(source_path, target_path)
-    CurrentPath = os.getcwd() + '\YiTongjiAUTO.exe'
-    path = 'C:\\Users\\' + username + '\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\YiTongjiAUTOrun.vbs'
-    vbs = '''set ws=WScript.CreateObject("WScript.Shell") 
-ws.Run "''' + CurrentPath + ''' /start",1,True '''
-    with open(path, 'w') as f:
-        f.write(vbs)
-    
+        id = get_DailyCode(self.headers, self.data)
+        if id is not None:
+            url = 'https://www.ioteams.com/ncov/api/users/dailyReports/{}'
+            try:
+                requests.put(eval(url.format(id)),
+                             headers=eval(json.dumps(self.headers)),
+                             data=eval(json.dumps(self.data)))
+            except:
+                pass
+            print(datetime.datetime.now().strftime('\n[%Y/%m/%d %H:%M:%S]') +
+                  "Token:" +
+                  self.token +
+                  " -> 打卡成功.\n>>", end='')
+        else:
+            print(datetime.datetime.now().strftime('\n[%Y/%m/%d %H:%M:%S]') +
+                  " Token:" +
+                  self.token +
+                  " -> 此ID今日已打卡, 无需重复执行.\n>>", end='')
+            pass
+
+
+# 定时打卡服务
+class Service:
+    def __init__(self):
+        self.describe()
+        self.taskList = []
+        self.status = False
+        self.timeSet = "00:00:00"
+        print(datetime.datetime.now().strftime('\n[%Y/%m/%d %H:%M:%S]') + " 已初始化打卡服务. (输入help可查看命令提示)\n", end='')
+
+    def main(self, task_list: list):
+        days = ""
+        print(datetime.datetime.now().strftime('\n[%Y/%m/%d %H:%M:%S]') + " 已部署定时打卡服务.\n", end='')
+        while self.status:
+            if datetime.datetime.now().strftime('%H:%M:%S') == self.timeSet and \
+                    days != datetime.datetime.now().strftime('%d'):
+                for obj in task_list:
+                    obj.report()
+                days = datetime.datetime.now().strftime('%d')
+
+    def run(self):
+        self.status = True
+        thread = threading.Thread(target=self.main, args=(self.taskList,))
+        thread.start()
+
+    def set(self, time: str):
+        self.timeSet = time
+        print(datetime.datetime.now().strftime('\n[%Y/%m/%d %H:%M:%S]') +
+              " 服务执行周期已设定为每日%s.\n" % time, end='')
+
+    def add(self,
+            token=None,
+            province=None,
+            city=None,
+            country=None,
+            lng=None,
+            lat=None,
+            fever=False,
+            infected=False):
+        self.taskList.append(
+            Health_Reporter(
+                token,
+                province,
+                city,
+                country,
+                lng,
+                lat,
+                fever,
+                infected))
+        print(datetime.datetime.now().strftime('\n[%Y/%m/%d %H:%M:%S]') + " 已添加%s到任务队列.\n" % token, end='')
+
+    def show(self):
+        id = 0
+        print(datetime.datetime.now().strftime('\n[%Y/%m/%d %H:%M:%S]') +
+              " 任务队列中已存在%d条记录:\n" % len(self.taskList), end='')
+        for obj in self.taskList:
+            print("队列ID: %d" % id, "(Token %s)\n" % obj.token, end='')
+            id += 1
+
+    def delete(self, id: int):
+        try:
+            token = self.taskList[id].token
+            self.taskList.pop(id)
+            print(datetime.datetime.now().strftime('\n[%Y/%m/%d %H:%M:%S]') +
+                  " ID:{0} Token {1} 已从任务队列中移除.\n".format(id, token), end='')
+        except IndexError:
+            print(datetime.datetime.now().strftime('\n[%Y/%m/%d %H:%M:%S]') +
+                  " ID:%d out of range.\n" % id, end='')
+
+    def stop(self):
+        self.status = False
+        print(datetime.datetime.now().strftime('\n[%Y/%m/%d %H:%M:%S]') + " 已停止打卡服务.\n", end='')
+        sys.exit()
+
+    @staticmethod
+    def help():
+        print("""命令提示: 
+        run -> 部署服务
+        stop -> 关闭/停止服务
+        time set -> 设置打卡时间
+        add -> 向队列添加新的打卡对象
+        show -> 查看已记录的打卡队列
+        delete -> 删除打卡对象
+        describe -> 查看程序自述
+        """)
+
+    @staticmethod
+    def describe():
+        print("""
+        YiTongJiAUTO 2.0 Beta
+        仅供学习, 请按时打卡, 及时反应真实状况, 盼疫情早日结束.
+        Author  : Barry Wang 
+        @Github : https://github.com/BarryWangQwQ
+        """)
+
 
 if __name__ == '__main__':
-    Console()
-    #GUI()
-    try:
-        #autorun()
-        #print("\n已经为你设置成开机自动启动并上报信息。")
-        print("\n检查网络状态...")
-        driver.get("https://www.ioteams.com/ncov/ccbuptxs#/report")  
-        driver.maximize_window()
-        driver.implicitly_wait(3) 
-    except:
-        print("\n设置开机自启动失败，请关闭程序并右键以管理员模式运行再试。")
-        print("\n检查网络状态...")
-                                                  
-    try:
-        driver.find_element_by_xpath('//*[@id="app"]/div/div/div/button[1]')
-        driver.implicitly_wait(3)                                                           
-        login_history()
-    except:
-        login_first()
+    service = Service()  # 初始化服务
+
+    # 初始化打卡对象
+    barry = Health_Reporter("68e932c30032caae9c01f6f5",  # Token
+                            "110000",  # 省份代码
+                            "110100",  # 市区代码
+                            "110119",  # 县级代码
+                            "115.88800815442164",  # 经度
+                            "40.37037323579328")  # 纬度
+
+    # 加入任务列表
+    service.taskList.append(barry)
+
+    while True:
+        i = input(">> ")
+        if i == "run":
+            service.run()
+        elif i == "stop":
+            service.stop()
+        elif i == "time set":
+            i = input("time (H:M:S) >> ")
+            service.set(i)
+        elif i == "add":
+            token = input("token (str) >> ")
+            province = input("province (int) >> ")
+            city = input("city (int) >> ")
+            country = input("country (int) >> ")
+            lng = input("lng (float) >> ")
+            lat = input("lat (float) >> ")
+            fever = bool(input("fever (True/False) >> "))
+            infected = bool(input("infected (True/False) >> "))
+            service.add(token,
+                        province,
+                        city,
+                        country,
+                        lng,
+                        lat,
+                        fever,
+                        infected)
+        elif i == "show":
+            service.show()
+        elif i == "delete":
+            id = int(input("id (int) >> "))
+            service.delete(id)
+        elif i == "help":
+            service.help()
+        elif i == "describe":
+            service.describe()
