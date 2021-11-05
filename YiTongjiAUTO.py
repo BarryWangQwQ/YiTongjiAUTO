@@ -204,8 +204,9 @@ class Service:
 if __name__ == '__main__':
     service = Service()  # 初始化服务
 
+    '''
     # 初始化打卡对象
-    barry = Health_Reporter("68e932c30032caae9c01f6f5",  # Token
+    barry = Health_Reporter("68e932c30032****9c01f6f5",  # Token
                             "110000",  # 省份代码
                             "110100",  # 市区代码
                             "110119",  # 县级代码
@@ -214,6 +215,7 @@ if __name__ == '__main__':
 
     # 加入任务列表
     service.taskList.append(barry)
+    '''
 
     while True:
         i = input(">> ")
